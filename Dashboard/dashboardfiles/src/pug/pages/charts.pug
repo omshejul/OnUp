@@ -1,0 +1,42 @@
+extends ../layouts/dashboard.pug
+
+block config
+    - var bodyClass = 'sb-nav-fixed'
+    - var pageTitle = 'Charts'
+    - var sidenavStyle = 'sb-sidenav-dark'
+
+block content
+    .container-fluid.px-4
+        include includes/page-header.pug
+        .card.mb-4
+            .card-body.
+        .card.mb-4
+            .card-header
+                i.fas.fa-chart-area.me-1
+                | Area Chart Example
+            .card-body
+                canvas#myAreaChart(width='100%', height='30')
+            .card-footer.small.text-muted 
+        .row
+            .col-lg-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-bar.me-1
+                        | Bar Chart Example
+                    .card-body
+                        canvas#myBarChart(width='100%', height='50')
+                    .card-footer.small.text-muted 
+            .col-lg-6
+                .card.mb-4
+                    .card-header
+                        i.fas.fa-chart-pie.me-1
+                        | Pie Chart of Tech Used by Project Developers
+                    .card-body
+                        canvas#myPieChart(width='100%', height='50')
+                    .card-footer.small.text-muted 
+
+append scripts
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js', crossorigin='anonymous')
+    script(src='assets/demo/chart-area-demo.js')
+    script(src='assets/demo/chart-bar-demo.js')
+    script(src='assets/demo/chart-pie-demo.js')
