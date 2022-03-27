@@ -4,6 +4,10 @@ from . import views
 
 urlpatterns = [
     path('',views.index, name='index'),
+    path('dashboard', views.dashboard, name="dashboard"),
+    path('page404', views.page404, name="page404"),
+    path('page500', views.page500, name="page500"),
+    path('charts', views.charts, name="charts"),
     # path('add',views.add,name='add')
 ]
 

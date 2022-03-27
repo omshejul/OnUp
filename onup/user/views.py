@@ -30,3 +30,12 @@ def index(request):
             'projectname':projectname
         }
         return render(request, 'index.html', context)
+
+def dashboard(request):
+    return render(request,'dash/index.html')
+def page404(request):
+    return render(request,'dash/404.html')
+def page500(request):
+    return render(request,'dash/500.html')
+def charts(request):
+    return render(request,'dash/charts.html')
