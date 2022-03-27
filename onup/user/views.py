@@ -39,3 +39,11 @@ def page500(request):
     return render(request,'dash/500.html')
 def charts(request):
     return render(request,'dash/charts.html')
+def tables(request):
+    return render(request,'dash/tables.html')
+def login(request):
+    return render(request,'dash/login.html')
+def password(request):
+    return render(request,'dash/password.html')
+def register(request):
+    return render(request,'dash/register.html')
