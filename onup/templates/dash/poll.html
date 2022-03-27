@@ -60,7 +60,7 @@
     <script src="{{ STATIC_URL }}static/js/poll.js"></script>  
       <div class="submitbutton">
       <button id="btn">
-        <a href="http://127.0.0.1:5500/Dashboard/dashboardfiles/dist/index.html"><p id="btnText" class="submit" style="text-decoration: none;">>Submit</p></a>
+        <a href="{% url 'dashboard'%}"><p id="btnText" class="submit" style="text-decoration: none;">>Submit</p></a>
         <div class="check-box">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
                 <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
