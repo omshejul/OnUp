@@ -12,6 +12,8 @@ urlpatterns = [
     path('login', views.login, name="login"),
     path('password', views.password, name="password"),
     path('register', views.register, name="register"),
+    path('poll', views.poll, name="poll"),
+    path('light', views.light, name="light"),
     # path('add',views.add,name='add')
 ]
 

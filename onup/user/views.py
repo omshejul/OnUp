@@ -47,3 +47,7 @@ def password(request):
     return render(request,'dash/password.html')
 def register(request):
     return render(request,'dash/register.html')
+def poll(request):
+    return render(request,'dash/poll.html')
+def light(request):
+    return render(request,'dash/layout-sidenav-light.html')
